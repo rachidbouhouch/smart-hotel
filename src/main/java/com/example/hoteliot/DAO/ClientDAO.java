@@ -18,11 +18,11 @@ public class ClientDAO implements DAO<Client> {
             try {
                 String sqlQuery = "select * from client";
                 pstmt = BDSingleton.getConn().prepareStatement(sqlQuery);
-                pstmt.executeQuery();
+                rs=pstmt.executeQuery();
                 while (rs.next()) {
                     long id = rs.getLong("id");
-                    String prenom = rs.getString("firstName");
-                    String nom = rs.getString("lastName");
+                    String prenom = rs.getString("prenom");
+                    String nom = rs.getString("nom");
                     String email = rs.getString("email");
                     String cin = rs.getString("cin");
                     String pays = rs.getString("pays");

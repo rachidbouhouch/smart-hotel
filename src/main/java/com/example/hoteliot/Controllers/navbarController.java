@@ -6,6 +6,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 
 import java.io.IOException;
@@ -13,7 +14,7 @@ import java.io.IOException;
 public class navbarController {
 
      @FXML
-     private VBox contentArea;
+     private AnchorPane contentArea;
 
      @FXML
      private Button btnClient;

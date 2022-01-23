@@ -13,8 +13,7 @@ public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("navbar.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(),890,700);
-        stage.setResizable(false);
+        Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Smart Hotel");
         stage.setScene(scene);
         stage.show();

@@ -14,9 +14,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="735.0" stylesheets="@/css/styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hoteliot.Controllers.clientsController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="742.0" stylesheets="@/css/styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hoteliot.Controllers.clientsController">
     <children>
-        <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="735.0">
+        <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="737.0">
             <children>
                 <Pane layoutX="25.0" layoutY="25.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minWidth="734.0" prefHeight="75.0" prefWidth="734.0" styleClass="header">
                     <VBox.margin>
@@ -87,15 +87,15 @@
                                 <Insets right="20.0" />
                             </HBox.margin>
                         </DatePicker>
-                        <Button fx:id="clearBtn" mnemonicParsing="false" styleClass="cancelbutton" text="Clear" />
+                        <Button fx:id="clearBtn" mnemonicParsing="false" prefHeight="30.0" prefWidth="58.0" styleClass="cancelbutton" text="Clear" />
                     </children>
                     <VBox.margin>
                         <Insets bottom="20.0" left="25.0" right="25.0" />
                     </VBox.margin>
                 </HBox>
-                <TableView fx:id="visitTable" editable="true" fixedCellSize="60.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="535.0" prefWidth="700.0">
+                <TableView fx:id="clientTable" editable="true" fixedCellSize="60.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="535.0" prefWidth="695.0">
                     <columns>
-                        <TableColumn fx:id="id" maxWidth="50.0" minWidth="40.0" prefWidth="50.0" resizable="false" text="ID" />
+                        <TableColumn fx:id="idClient" maxWidth="50.0" minWidth="40.0" prefWidth="50.0" resizable="false" text="ID" />
                         <TableColumn fx:id="fullName" maxWidth="133.0" minWidth="75.0" prefWidth="133.0" resizable="false" text="NOM &amp; PRENOM" />
                         <TableColumn fx:id="cin" maxWidth="150.0" minWidth="92.0" prefWidth="92.0" resizable="false" text="CIN" />
                         <TableColumn fx:id="telephone" maxWidth="284.0" minWidth="0.0" prefWidth="168.0" resizable="false" text="TELEPHONE" />
@@ -113,11 +113,11 @@
                         <Insets />
                     </opaqueInsets>
                 </TableView>
-                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="745.0">
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="723.0">
                     <children>
                         <Button alignment="CENTER" layoutX="25.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="31.0" prefWidth="128.0" styleClass="addbutton" text="Add new client" />
-                        <Button layoutX="550.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="31.0" prefWidth="80.0" styleClass="deletebutton" text="Delete" />
-                        <Button layoutX="640.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="31.0" prefWidth="80.0" styleClass="savebutton" text="Refresh" />
+                        <Button layoutX="536.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="31.0" prefWidth="80.0" styleClass="deletebutton" text="Delete" />
+                        <Button layoutX="626.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="31.0" prefWidth="80.0" styleClass="savebutton" text="Refresh" />
                     </children>
                 </AnchorPane>
             </children>
